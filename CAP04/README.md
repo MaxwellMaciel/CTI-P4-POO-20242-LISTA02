@@ -121,36 +121,36 @@ Receives a person's height and weight, and classifies them according to the prov
 
 ---
 
-20. **Product Price and Tax Calculation** ➕  
+### 20. **Product Price and Tax Calculation** ➕  
 Given product code, weight, and country of origin code, calculate and display the weight in grams, total price, tax, and final value.  
 [View Code](https://github.com/MaxwellMaciel/CTI-P4-POO-20242-LISTA02/blob/main/CAP04/Q20/src/br/edu/principal/Principal.java)
 
 --- 
 
-21. **Cargo Weight and Tax Calculation** ➕  
+### 21. **Cargo Weight and Tax Calculation** ➕  
 Given the state code, cargo weight in tons, and cargo code, calculate and display the weight in kilograms, price, tax, and total value.  
 [View Code](https://github.com/MaxwellMaciel/CTI-P4-POO-20242-LISTA02/blob/main/CAP04/Q21/src/br/edu/principal/Principal.java)
 
 ---
 
-22. **Salary Calculation with Tax and Bonus** ➕  
+### 22. **Salary Calculation with Tax and Bonus** ➕  
 Given salary base and time of service, calculate and display the tax, bonus, net salary, and classification based on salary brackets.  
 [View Code](https://github.com/MaxwellMaciel/CTI-P4-POO-20242-LISTA02/blob/main/CAP04/Q22/src/br/edu/principal/Principal.java)
 
 ---
 
-23. **Salary Based on Work Shift and Category** ➕  
+### 23. **Salary Based on Work Shift and Category** ➕  
 Given salary, work shift, category, and hours worked, calculate and display the salary coefficient, gross salary, tax, bonus, meal allowance, net salary, and classification.  
 [View Code](https://github.com/MaxwellMaciel/CTI-P4-POO-20242-LISTA02/blob/main/CAP04/Q23/src/br/edu/principal/Principal.java)
 
 ---
 
-24. **Product Price with Additional Charges and Discount** ➕  
+### 24. **Product Price with Additional Charges and Discount** ➕  
 Given product price, type, refrigeration requirement, calculate and display additional charges, tax, cost price, discount, new price, and classification based on price.  
 [View Code](https://github.com/MaxwellMaciel/CTI-P4-POO-20242-LISTA02/blob/main/CAP04/Q04/src/br/edu/principal/Principal.java)
 
 ---
 
-25. **Angle Quadrant and Rotation Direction** ➕  
+### 25. **Angle Quadrant and Rotation Direction** ➕  
 Given an angle, calculate and display the quadrant, reduced angle (if over 360° or less than -360°), number of rotations, and direction (clockwise or counterclockwise).  
 [View Code](https://github.com/MaxwellMaciel/CTI-P4-POO-20242-LISTA02/blob/main/CAP04/Q25/src/br/edu/principal/Principal.java)
