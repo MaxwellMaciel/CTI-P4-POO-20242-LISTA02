@@ -1,6 +1,6 @@
 # CTI-P4-POO-20242-LISTA02
 
-# 🌌 **Solution for Activity List 01**
+# 🌌 **Solution for Activity List 02**
 
 ## ✨ Overview
 
