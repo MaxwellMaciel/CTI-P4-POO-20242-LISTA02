@@ -1,4 +1,4 @@
-## Chapter 5: Loop Structures
+### Chapter 5: Loop Structures
 
 This chapter covers the loop structures used in algorithms, which are essential for performing repetitive tasks. It introduces three main types of loops: the **FOR** loop, which is used when the number of repetitions is known; the **WHILE** loop, which repeats the code as long as a condition remains true; and the **REPEAT UNTIL** loop, which ensures the code is executed at least once and continues repeating until the condition becomes true.
 
@@ -6,7 +6,7 @@ The chapter also explains how these structures can be applied in algorithms to s
 
 **Resolution of the Exercises Solved from CHAPTER 05 - LOOP STRUCTURES of the book FUNDAMENTALS OF COMPUTER PROGRAMMING by authors Ana F. G. Ascencio and Edilene A. V. de Campos. 📚**
 
---
+---
 
 ### 1. Factorial Calculation ➕  
 The program calculates the factorial for each of the N positive values entered.  
