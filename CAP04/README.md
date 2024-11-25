@@ -147,7 +147,7 @@ Given salary, work shift, category, and hours worked, calculate and display the 
 
 24. **Product Price with Additional Charges and Discount** ➕  
 Given product price, type, refrigeration requirement, calculate and display additional charges, tax, cost price, discount, new price, and classification based on price.  
-[View Code](https://github.com/MaxwellMaciel/CTI-P4-POO-20242-LISTA02/blob/main/CAP04/Q24/src/br/edu/principal/Principal.java)
+[View Code](https://github.com/MaxwellMaciel/CTI-P4-POO-20242-LISTA02/blob/main/CAP04/Q04/src/br/edu/principal/Principal.java)
 
 ---
 
