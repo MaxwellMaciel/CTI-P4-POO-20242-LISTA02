@@ -11,6 +11,7 @@ The chapter also explains how these structures can be applied in algorithms to s
 ### 1. Factorial Calculation ➕  
 
 The program calculates the factorial for each of the N positive values entered.  [View Code](https://github.com/MaxwellMaciel/CTI-P4-POO-20242-LISTA02/blob/main/CAP05/Q01/src/br/edu/principal/Principal.java)  
+
 --  
 
 ### 2. Traffic Accident Survey ➕  
