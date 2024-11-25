@@ -1,78 +1,47 @@
 package br.edu.principal;
+
 import java.util.Scanner;
 
-public class Principal {
+public class Main {
     public static void main(String[] args) {
+        double angulo;
+        int voltas;
 
         Scanner scanner = new Scanner(System.in);
+        angulo = scanner.nextDouble();
 
-        double salMin, coeficiente = 0, salBruto, imposto = 0, grat, auxilio, salLiquido;
-        int nht;  
-        String turno, categoria;
-
-        System.out.print("Digite o salário mínimo: ");
-        salMin = scanner.nextDouble();     
-        System.out.print("Digite o turno (M - Matutino, V - Vespertino, N - Noturno): ");
-        turno = scanner.next();    
-        System.out.print("Digite a categoria (O - Operário, G - Gerente): ");
-        categoria = scanner.next();
-        System.out.print("Digite o número de horas trabalhadas no mês: ");
-        nht = scanner.nextInt();
-
-        if (turno.equals("M")) {
-            coeficiente = 0.10 * salMin;  
-        } else if (turno.equals("V")) {
-            coeficiente = 0.15 * salMin;  
-        } else if (turno.equals("N")) {
-            coeficiente = 0.12 * salMin;  
-        }
-
-        System.out.println("Coeficiente: R$ " + coeficiente);
-        salBruto = nht * coeficiente;
-        System.out.println("Salário Bruto: R$ " + salBruto);
-
-        if (categoria.equals("O")) {
-            if (salBruto >= 300) {
-                imposto = 0.05 * salBruto;  
-            } else {
-                imposto = 0.03 * salBruto;  
-            }
-        } else if (categoria.equals("G")) {
-            if (salBruto >= 400) {
-                imposto = 0.06 * salBruto;  
-            } else {
-                imposto = 0.04 * salBruto;  
-            }
-        }
-
-        System.out.println("Imposto: R$ " + imposto);
-
-        if (turno.equals("N") && nht > 80) {
-            grat = 50;  
+        if (angulo > 360 || angulo < -360) {
+            voltas = (int) (angulo / 360);
+            angulo = angulo % 360;
         } else {
-            grat = 30;  
+            voltas = 0;
         }
 
-        System.out.println("Gratificação: R$ " + grat);
+        if (angulo == 0 || angulo == 90 || angulo == 180 || angulo == 270 || angulo == 360 || angulo == -90 || angulo == -180 || angulo == -270 || angulo == -360) {
+            System.out.println("Está em cima de algum dos eixos");
+        }
 
-        if (categoria.equals("O") || coeficiente <= 25) {
-            auxilio = (1.0 / 3) * salBruto;  
+        if ((angulo > 0 && angulo < 90) || (angulo < -270 && angulo > -360)) {
+            System.out.println("1o Quadrante");
+        }
+
+        if ((angulo > 90 && angulo < 180) || (angulo < -180 && angulo > -270)) {
+            System.out.println("2o Quadrante");
+        }
+
+        if ((angulo > 180 && angulo < 270) || (angulo < -90 && angulo > -180)) {
+            System.out.println("3o Quadrante");
+        }
+
+        if ((angulo > 270 && angulo < 360) || (angulo < 0 && angulo > -90)) {
+            System.out.println("4o Quadrante");
+        }
+
+        System.out.print(voltas + " volta(s) no sentido ");
+        if (angulo < 0) {
+            System.out.println("horário");
         } else {
-            auxilio = (1.0 / 2) * salBruto;  
+            System.out.println("anti-horário");
         }
-
-        System.out.println("Auxílio Alimentação: R$ " + auxilio);
-        salLiquido = salBruto - imposto + grat + auxilio;
-        System.out.println("Salário Líquido: R$ " + salLiquido);
-
-        if (salLiquido < 350) {
-            System.out.println("Mal Remunerado");
-        } else if (salLiquido >= 350 && salLiquido <= 600) {
-            System.out.println("Normal");
-        } else {
-            System.out.println("Bem Remunerado");
-        }
-
-        scanner.close();
     }
 }
