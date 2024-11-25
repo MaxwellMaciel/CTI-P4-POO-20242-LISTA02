@@ -31,6 +31,41 @@ By completing these exercises, students will be well-equipped to handle software
 
 ---
 
+## 🛠️ **How to Download and Use the Repository**
+
+Follow these simple steps to get started:
+
+### 1. **Clone the Repository**
+First, install **Git** from [here](https://git-scm.com/). Then, open a terminal and run:
+
+```bash
+git clone https://github.com/your-username/CTI-P4-POO-20242-LISTA02.git
+```
+
+### 2. **Navigate to the Repository Folder**
+Go to the project folder with:
+
+```bash
+cd CTI-P4-POO-20242-LISTA02
+```
+
+### 3. **Make Changes and Commit**
+To update or add new solutions:
+
+- **Edit the files**.
+- **Stage changes**: `git add .`
+- **Commit**: `git commit -m "Your message"`
+- **Push** (if you're working with a fork): `git push`
+
+### 4. **Create a Pull Request (Optional)**
+To contribute changes, go to the **Pull Requests** tab on GitHub, click **New Pull Request**, and follow the instructions.
+
+---
+
+For more help, refer to the **Git** documentation or ask for assistance from the collaborators. Happy coding! 👩‍💻👨‍💻
+
+---
+
 ## 🤝 **Collaborators**
 
 A special shout-out to our amazing collaborators who contributed to this project:
