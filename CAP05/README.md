@@ -1,281 +1,74 @@
+### 1. Factorial Calculation ➕  
+The program reads an integer N and calculates the factorial for each of the N positive values entered.
 
+### 2. Traffic Accident Survey ➕  
+The program reads traffic accident data for five cities, calculates the highest and lowest accident rates, the average number of vehicles, and the average number of accidents in cities with fewer than 2,000 vehicles.
 
+### 3. Series Calculation ➕  
+The program receives a number of terms and a positive value X, then calculates and displays the result of a specified mathematical series.
 
-**Resolution of the Exercises Solved from CHAPTER 05 - SEQUENTIAL STRUCTURE of the book FUNDAMENTALS OF COMPUTER PROGRAMMING by authors Ana F. G. Ascencio and Edilene A. V. de Campos. 📚**
+### 4. Series Value Determination ➕  
+The program reads the number of terms and calculates and displays the values in a series based on specific conditions.
 
----
+### 5. Payroll Calculation ➕  
+The program reads employee data (code, hours worked, shift, category) and calculates the hourly wage based on a minimum wage of R$ 450. It computes the initial salary, meal allowance (20% for up to R$ 300, 15% for R$ 300-600, 5% for above R$ 600), and displays the employee code, hours worked, hourly wage, initial salary, meal allowance, and final salary.
 
-### 1. Aumento Salarial de Funcionário
+### 6. Student Grade Evaluation ➕  
+The program reads two grades for six students, calculates their average, classifies them based on performance (Fail, Exam, Pass), and displays the total number of students in each category and the class average.
 
-**Problema:** Um funcionário de uma empresa recebe aumento salarial anual conforme um percentual específico. O programa deve calcular o salário atual do funcionário com base nos aumentos anuais.
+### 7. Number Range Sum ➕  
+The program calculates the sum of all numbers between two input values, inclusive, and stops when the first number is greater than or equal to the second.
 
-**Pseudocódigo:**
-```pseudocode
-ALGORITMO
-DECLARE i, ano_atual, salario NUMÉRICO
-novo_salario, percentual NUMÉRICO
-LEIA ano_atual
-salario ← 1000
-percentual ← 1.5/100
-novo_salario ← salario + percentual * salario
-PARA i ← 2007 ATÉ ano_atual FAÇA
-    percentual ← 2 * percentual
-    novo_salario ← novo_salario + percentual * novo_salario
-FIM
-ESCREVA novo_salario
-FIM_ALGORITMO.
-```
+### 8. Employee Salary Comparison ➕  
+The program compares the salary of two employees (Carlos and João), where João earns one-third of Carlos' salary, and calculates how many months it will take for João's investment to surpass Carlos' savings.
 
----
+### 9. Product Cost Calculation ➕  
+The program reads product data (unit price, origin country, transport mode, dangerous goods), calculates taxes, transport cost, and insurance, and determines the final price.
 
-### 2. Cálculo do valor de E (Série)
+### 10. Salary Tax Calculation ➕  
+The program calculates the tax based on the salary of an employee, applying a 5% tax for salaries under R$ 500, 10% for R$ 500–850, and 15% for salaries above R$ 850.
 
-**Problema:** Calcular o valor de \( E \) conforme a fórmula:
+### 11. Salary Adjustment ➕  
+The program adjusts the salary of an employee according to a specified increase rate: R$ 25 for salaries over R$ 1,500, R$ 50 for salaries between R$ 750 and R$ 1,500, R$ 75 for salaries between R$ 450 and R$ 750, and R$ 100 for salaries under R$ 450.
 
-\[
-E = 1 + \frac{1}{1!} + \frac{1}{2!} + \frac{1}{3!} + ... + \frac{1}{N!}
-\]
+### 12. Employee Classification ➕  
+The program classifies employees' salaries as “Underpaid” for salaries under R$ 700 and “Well Paid” for salaries above R$ 700.
 
-**Pseudocódigo:**
-```pseudocode
-ALGORITMO
-DECLARE n, e, i, j, fat NUMÉRICO
-LEIA n
-e ← 1
-PARA i ← 1 ATÉ n FAÇA
-    fat ← 1
-    PARA j ← 1 ATÉ i FAÇA
-        fat ← fat * j
-    FIM
-    e ← e + 1/fat
-FIM
-ESCREVA e
-FIM_ALGORITMO.
-```
+### 13. Candidate Survey ➕  
+The program reads the age, sex, and experience of job candidates and calculates statistics such as the number of male and female candidates, average experience of men, and percentage of men over 45 years old.
 
----
+### 14. Product Storage and Tax ➕  
+The program reads product data (unit price, category, refrigeration), calculates storage costs and taxes, and displays the final price, along with average costs and total taxes.
 
-### 3. Tabela de Fatorial de N Valores
+### 15. Triangle Area Calculation ➕  
+The program calculates the area of a triangle given its base and height, ensuring that both values are positive.
 
-**Problema:** Calcular o fatorial dos números fornecidos, conforme o número \( N \) de valores fornecidos.
+### 16. Employee Investment Calculation ➕  
+The program calculates how many months it will take for João's savings in a fixed income fund to equal or surpass Carlos’ savings in a savings account, with different interest rates applied.
 
-**Pseudocódigo:**
-```pseudocode
-ALGORITMO
-DECLARE n, num, i, j, fat NUMÉRICO
-LEIA n
-PARA i ← 1 ATÉ n FAÇA
-    LEIA num
-    fat ← 1
-    PARA j ← 1 ATÉ num FAÇA
-        fat ← fat * j
-    FIM
-    ESCREVA fat
-FIM
-FIM_ALGORITMO.
-```
+### 17. Product Pricing ➕  
+The program calculates product prices based on unit price, transportation, insurance, and taxes, considering origin country, transport mode, and product characteristics.
 
----
+### 18. Product Price Finalization ➕  
+The program finalizes the price of products by calculating taxes, transport costs, and insurance, displaying the final price and the total tax for all products.
 
-### 4. Estatísticas de Acidentes de Trânsito
+### 19. Employee Payroll ➕  
+The program calculates and displays the salary details of employees based on hours worked, shift, and job category. It computes the salary based on a minimum wage and a defined pay scale.
 
-**Problema:** Calcular o maior e menor índice de acidentes de trânsito, a média de veículos, e a média de acidentes nas cidades com menos de 2.000 veículos.
+### 20. Salary Adjustment ➕  
+The program adjusts salaries based on input conditions, applying fixed increments based on salary ranges and showing the final adjusted salary.
 
-**Pseudocódigo:**
-```pseudocode
-ALGORITMO
-DECLARE cont, cod, num_vei, num_acid NUMÉRICO
-maior, cid_maior, menor, cid_menor NUMÉRICO
-media_vei, soma_vei, media_acid NUMÉRICO
-soma_acid, cont_acid NUMÉRICO
-soma_vei ← 0
-soma_acid ← 0
-cont_acid ← 0
-PARA cont ← 1 ATÉ 5 FAÇA
-    LEIA cod, num_vei, num_acid
-    SE cont = 1
-        maior ← num_acid
-        cid_maior ← cod
-        menor ← num_acid
-        cid_menor ← cod
-    SENÃO
-        SE num_acid > maior
-            maior ← num_acid
-            cid_maior ← cod
-        FIM
-        SE num_acid < menor
-            menor ← num_acid
-            cid_menor ← cod
-        FIM
-    FIM
-    soma_vei ← soma_vei + num_vei
-    SE num_vei < 2000
-        soma_acid ← soma_acid + num_acid
-        cont_acid ← cont_acid + 1
-    FIM
-FIM
-ESCREVA maior, cid_maior
-ESCREVA menor, cid_menor
-media_vei ← soma_vei / 5
-ESCREVA media_vei
-SE cont_acid = 0
-    ESCREVA "Não foi digitada nenhuma cidade com menos de 2000 veículos"
-SENÃO
-    media_acid ← soma_acid / cont_acid
-    ESCREVA media_acid
-FIM
-FIM_ALGORITMO.
-```
+### 21. Employee Gender Classification ➕  
+The program classifies employees by gender and calculates the average salary for male and female workers.
 
----
+### 22. Employee Benefits Calculation ➕  
+The program calculates employee benefits (salaries, allowances, etc.) based on a predefined salary scale and generates reports on total benefits for the company.
 
-### 5. Cálculo de Série com Fatoriais
+### 23. Consumer Pricing Calculation ➕  
+The program calculates consumer pricing based on unit price, country of origin, transport method, and additional fees like taxes and shipping.
 
-**Problema:** Calcular a série:
+### 24. Monthly Expense Tracker ➕  
+The program tracks monthly expenses for multiple products, calculating totals, averages, and tax rates applied to each product.
 
-\[
-S = -\frac{X^2}{1!} + \frac{X^3}{2!} - \frac{X^4}{3!} + \frac{X^5}{4!} - \dots
-\]
-
-**Pseudocódigo:**
-```pseudocode
-ALGORITMO
-DECLARE fim, i, j, x, expoente, num_termos NUMÉRICO
-den, denominador, fat, s NUMÉRICO
-LEIA num_termos, x
-s ← 0
-denominador ← 1
-PARA i ← 1 ATÉ num_termos FAÇA
-    fim ← denominador
-    fat ← 1
-    PARA j ← 1 ATÉ fim FAÇA
-        fat ← fat * j
-    FIM
-    expoente ← i + 1
-    SE RESTO (expoente / 2) = 0
-        s ← s - x ^ expoente / fat
-    SENÃO
-        s ← s + x ^ expoente / fat
-    FIM
-    SE denominador = 4
-        den ← -1
-    SE denominador = 1
-        den ← 1
-    SE den = 1
-        denominador ← denominador + 1
-    SENÃO
-        denominador ← denominador - 1
-    FIM
-ESCREVA s
-FIM_ALGORITMO.
-```
-
----
-
-### 6. Cálculo de Salário e Benefícios
-
-**Problema:** Calcular o valor da hora trabalhada, salário inicial, auxílio alimentação e salário final para 10 funcionários com base em suas categorias, turnos e horas trabalhadas.
-
-**Pseudocódigo:**
-```pseudocode
-ALGORITMO
-DECLARE cont, codigo, nht, valor NUMÉRICO
-sal_min, sal_inicial, aux, sal_final NUMÉRICO
-turno, categoria LITERAL
-sal_min ← 450
-PARA cont ← 1 ATÉ 10 FAÇA
-    LEIA codigo, nht, turno, categoria
-    ENQUANTO turno ≠ "M" E turno ≠ "V" E turno ≠ "N" FAÇA
-        LEIA turno
-    FIM
-    ENQUANTO categoria ≠ "G" E categoria ≠ "O" FAÇA
-        LEIA categoria
-    FIM
-    SE categoria = "G"
-        SE turno = "N"
-            valor ← sal_min * 18 / 100
-        SENÃO
-            valor ← sal_min * 15 / 100
-    SENÃO
-        SE turno = "N"
-            valor ← sal_min * 13 / 100
-        SENÃO
-            valor ← sal_min * 10 / 100
-    FIM
-    sal_inicial ← nht * valor
-    SE sal_inicial <= 300
-        aux ← sal_inicial * 20 / 100
-    SENÃO SE sal_inicial < 600
-        aux ← sal_inicial * 15 / 100
-    SENÃO
-        aux ← sal_inicial * 5 / 100
-    FIM
-    sal_final ← sal_inicial + aux
-    ESCREVA codigo, nht, valor, sal_inicial, aux, sal_final
-FIM
-FIM_ALGORITMO.
-```
-
----
-
-### 7. Sequência de Fibonacci
-
-**Problema:** Mostrar os oito primeiros termos da sequência de Fibonacci.
-
-**Pseudocódigo:**
-```pseudocode
-ALGORITMO
-DECLARE cont, num1, num2, res NUMÉRICO
-num1 ← 0
-num2 ← 1
-ESCREVA num1
-ESCREVA num2
-PARA cont ← 3 ATÉ 8 FAÇA
-    res ← num1 + num2
-    ESCREVA res
-    num1 ← num2
-    num2 ← res
-FIM
-FIM_ALGORITMO.
-```
-
----
-
-### 8. Série com Multiplicações e Divisões
-
-**Problema:** Calcular e mostrar os valores de acordo com uma série específica que alterna multiplicações e divisões.
-
-**Pseudocódigo:**
-```pseudocode
-ALGORITMO
-DECLARE i, num_termos, num1, num2, num3 NUMÉRICO
-LEIA num_termos
-num1 ← 2
-num2 ← 7
-num3 ← 3
-ESCREVA num1
-ESCREVA num2
-ESCREVA num3
-i ← 4
-ENQUANTO i ≠ num_termos FAÇA
-    num1 ← num1 * 2
-    ESCREVA num1
-    i ← i + 1
-    SE i ≠ num_termos
-        num2 ← num2 * 3
-        ESCREVA num2
-        i ← i + 1
-        SE i ≠ num_termos
-            num3 ← num3 * 4
-
-
-            ESCREVA num3
-        FIM
-    FIM
-FIM
-FIM_ALGORITMO.
-```
-
----
-
-Agora, todos os pseudocódigos e resumos estão em markdown!
+### 25. Final Product Price ➕  
+The program calculates the final product price after considering tax rates, storage costs, transport fees, and insurance, based on the product's category, origin, and transport method.
