@@ -1,77 +1,52 @@
 package br.edu.principal;
-
 import java.util.Scanner;
 
 public class Principal {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int num, soma, qtd, maior, menor, qtd_par, soma_par, qtd_impar;
-        double media, media_par, perc;
+        int cod_est, cod_carga;
+        double peso_toneladas, peso_quilos, pre_carga, imposto, valor_total;
 
-        qtd = 0;
-        qtd_par = 0;
-        soma_par = 0;
-        qtd_impar = 0;
-        soma = 0;
-        
-        maior = 0;
-        menor = 0;
-        
-        System.out.print("Digite um número: ");
-        num = scanner.nextInt();
+        System.out.print("Digite o código do estado de origem (1 a 5): ");
+        cod_est = scanner.nextInt();
+        System.out.print("Digite o peso da carga (em toneladas): ");
+        peso_toneladas = scanner.nextDouble();
+        System.out.print("Digite o código da carga (10 a 40): ");
+        cod_carga = scanner.nextInt();
 
-        if (qtd == 0) {
-            maior = num;
-            menor = num;
-        }
+        peso_quilos = peso_toneladas * 1000;
+        System.out.println("Peso da carga (em quilos): " + peso_quilos);
 
-        while (num != 30000) {
-            if (qtd == 0) {
-                maior = num;
-                menor = num;
-            } else {
-                if (num > maior) {
-                    maior = num;
-                }
-                if (num < menor) {
-                    menor = num;
-                }
-            }
-
-            soma += num;
-            qtd++;
-
-            if (num % 2 == 0) {
-                soma_par += num;
-                qtd_par++;
-            } else {
-                qtd_impar++;
-            }
-
-            System.out.print("Digite outro número (ou 30000 para finalizar): ");
-            num = scanner.nextInt();
-        }
-
-        if (qtd == 0) {
-            System.out.println("Nenhum número digitado");
+        if (cod_carga >= 10 && cod_carga <= 20) {
+            pre_carga = 100 * peso_quilos;
+        } else if (cod_carga >= 21 && cod_carga <= 30) {
+            pre_carga = 250 * peso_quilos;
+        } else if (cod_carga >= 31 && cod_carga <= 40) {
+            pre_carga = 340 * peso_quilos;
         } else {
-            System.out.println("Soma: " + soma);
-            System.out.println("Quantidade de números: " + qtd);
-            media = (double) soma / qtd;
-            System.out.println("Média: " + media);
-            System.out.println("Maior número: " + maior);
-            System.out.println("Menor número: " + menor);
-
-            if (qtd_par == 0) {
-                System.out.println("Nenhum número par");
-            } else {
-                media_par = (double) soma_par / qtd_par;
-                System.out.println("Média dos números pares: " + media_par);
-            }
-
-            perc = (double) qtd_impar * 100 / qtd;
-            System.out.println("Percentual de números ímpares: " + perc + "%");
+            pre_carga = 0;
         }
+        System.out.println("Preço da carga: " + pre_carga);
+
+        if (cod_est == 1) {
+            imposto = 0.35 * pre_carga;
+        } else if (cod_est == 2) {
+            imposto = 0.25 * pre_carga;
+        } else if (cod_est == 3) {
+            imposto = 0.15 * pre_carga;
+        } else if (cod_est == 4) {
+            imposto = 0.05 * pre_carga;
+        } else if (cod_est == 5) {
+            imposto = 0;   
+        } else {
+            imposto = 0;  
+        }
+        System.out.println("Valor do imposto: " + imposto);
+
+        valor_total = pre_carga + imposto;
+        System.out.println("Valor total a pagar: " + valor_total);
+
+        scanner.close();
     }
 }
