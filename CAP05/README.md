@@ -1,4 +1,7 @@
-Aqui está o resumo com os pseudocódigos fornecidos em markdown:
+
+
+
+**Resolution of the Exercises Solved from CHAPTER 05 - SEQUENTIAL STRUCTURE of the book FUNDAMENTALS OF COMPUTER PROGRAMMING by authors Ana F. G. Ascencio and Edilene A. V. de Campos. 📚**
 
 ---
 
