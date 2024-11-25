@@ -1,8 +1,9 @@
 # Java Programming Solutions and Fundamentals of Repetition Structures
 
-This chapter covers the loop structures used in algorithms, which are essential for performing repetitive tasks. It introduces three main types of loops: the **FOR** loop, which is used when the number of repetitions is known; the **WHILE** loop, which repeats the code as long as a condition remains true; and the **REPEAT UNTIL** loop, which ensures the code is executed at least once and continues repeating until the condition becomes true.
+This repository contains solutions to a series of programming problems in Java. Each problem is presented with a brief description of its functionality, along with a direct link to the corresponding code.
 
-The chapter also explains how these structures can be applied in algorithms to solve various problems, providing practical examples of their implementation. In addition, important concepts such as accumulators and counters are discussed, which help perform calculations during loop iterations.
+This chapter covers the loop structures used in algorithms, which are essential for performing repetitive tasks. It introduces three main types of loops: the FOR loop, which is used when the number of repetitions is known; the WHILE loop, which repeats the code as long as a condition remains true; and the REPEAT UNTIL loop, which ensures the code is executed at least once and continues repeating until the condition becomes true. The chapter also explains how these structures can be applied in algorithms to solve various problems, providing practical examples of their implementation. In addition, important concepts such as accumulators and counters are discussed, which help perform calculations during loop iterations.
+
 
 **Resolution of the Exercises Solved from CHAPTER 05 - LOOP STRUCTURES of the book FUNDAMENTALS OF COMPUTER PROGRAMMING by authors Ana F. G. Ascencio and Edilene A. V. de Campos. 📚**
 
