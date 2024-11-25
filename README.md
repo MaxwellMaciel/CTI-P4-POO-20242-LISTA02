@@ -39,7 +39,7 @@ Follow these simple steps to get started:
 First, install **Git** from [here](https://git-scm.com/). Then, open a terminal and run:
 
 ```bash
-git clone https://github.com/your-username/CTI-P4-POO-20242-LISTA02.git
+git clone https://github.com/MaxwellMaciel/CTI-P4-POO-20242-LISTA02.git
 ```
 
 ### 2. **Navigate to the Repository Folder**
@@ -59,10 +59,6 @@ To update or add new solutions:
 
 ### 4. **Create a Pull Request (Optional)**
 To contribute changes, go to the **Pull Requests** tab on GitHub, click **New Pull Request**, and follow the instructions.
-
----
-
-For more help, refer to the **Git** documentation or ask for assistance from the collaborators. Happy coding! 👩‍💻👨‍💻
 
 ---
 
