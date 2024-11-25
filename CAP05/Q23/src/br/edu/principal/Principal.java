@@ -1,78 +1,53 @@
 package br.edu.principal;
+
 import java.util.Scanner;
 
 public class Principal {
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
 
-        double salMin, coeficiente = 0, salBruto, imposto = 0, grat, auxilio, salLiquido;
-        int nht;  
-        String turno, categoria;
+        double sal, valor_kw, gasto, acresc, total, tot_geral = 0;
+        int qtd, tipo, qtd_cons = 0;
+        
+        System.out.print("Digite o valor do salário: ");
+        sal = scanner.nextDouble();
+        System.out.print("Digite a quantidade de kw consumidos: ");
+        qtd = scanner.nextInt();
 
-        System.out.print("Digite o salário mínimo: ");
-        salMin = scanner.nextDouble();     
-        System.out.print("Digite o turno (M - Matutino, V - Vespertino, N - Noturno): ");
-        turno = scanner.next();    
-        System.out.print("Digite a categoria (O - Operário, G - Gerente): ");
-        categoria = scanner.next();
-        System.out.print("Digite o número de horas trabalhadas no mês: ");
-        nht = scanner.nextInt();
+        valor_kw = sal / 8;
 
-        if (turno.equals("M")) {
-            coeficiente = 0.10 * salMin;  
-        } else if (turno.equals("V")) {
-            coeficiente = 0.15 * salMin;  
-        } else if (turno.equals("N")) {
-            coeficiente = 0.12 * salMin;  
-        }
+        while (qtd != 0) {
+            gasto = qtd * valor_kw;
 
-        System.out.println("Coeficiente: R$ " + coeficiente);
-        salBruto = nht * coeficiente;
-        System.out.println("Salário Bruto: R$ " + salBruto);
+            System.out.print("Digite o tipo de cliente (1, 2, ou 3): ");
+            tipo = scanner.nextInt();
 
-        if (categoria.equals("O")) {
-            if (salBruto >= 300) {
-                imposto = 0.05 * salBruto;  
+            if (tipo == 1) {
+                acresc = gasto * 5 / 100;
+            } else if (tipo == 2) {
+                acresc = gasto * 10 / 100;
+            } else if (tipo == 3) {
+                acresc = gasto * 15 / 100;
             } else {
-                imposto = 0.03 * salBruto;  
+                acresc = 0;
             }
-        } else if (categoria.equals("G")) {
-            if (salBruto >= 400) {
-                imposto = 0.06 * salBruto;  
-            } else {
-                imposto = 0.04 * salBruto;  
+
+            total = gasto + acresc;
+            tot_geral += total;
+
+            if (total >= 500 && total <= 1000) {
+                qtd_cons++;
             }
+
+            System.out.println("Gasto: " + gasto);
+            System.out.println("Acréscimo: " + acresc);
+            System.out.println("Total: " + total);
+
+            System.out.print("Digite a quantidade de kw consumidos (ou 0 para encerrar): ");
+            qtd = scanner.nextInt();
         }
 
-        System.out.println("Imposto: R$ " + imposto);
-
-        if (turno.equals("N") && nht > 80) {
-            grat = 50;  
-        } else {
-            grat = 30;  
-        }
-
-        System.out.println("Gratificação: R$ " + grat);
-
-        if (categoria.equals("O") || coeficiente <= 25) {
-            auxilio = (1.0 / 3) * salBruto;  
-        } else {
-            auxilio = (1.0 / 2) * salBruto;  
-        }
-
-        System.out.println("Auxílio Alimentação: R$ " + auxilio);
-        salLiquido = salBruto - imposto + grat + auxilio;
-        System.out.println("Salário Líquido: R$ " + salLiquido);
-
-        if (salLiquido < 350) {
-            System.out.println("Mal Remunerado");
-        } else if (salLiquido >= 350 && salLiquido <= 600) {
-            System.out.println("Normal");
-        } else {
-            System.out.println("Bem Remunerado");
-        }
-
-        scanner.close();
+        System.out.println("Total geral: " + tot_geral);
+        System.out.println("Quantidade de consumidores com gasto entre 500 e 1000: " + qtd_cons);
     }
 }
