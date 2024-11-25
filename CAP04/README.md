@@ -1,9 +1,10 @@
-# A
+# **Java Programming Solutions and Fundamentals of Conditional Structures**
 
 This repository contains solutions to a series of programming problems in Java. Each problem is presented with a brief description of its functionality, along with a direct link to the corresponding code.
 
+This chapter covers the conditional structures used in algorithms, which are essential for decision-making processes in programming. It introduces three main types of conditional structures: the simple conditional (IF), which executes a command if a condition is true; the compound conditional (IF-ELSE), which provides an alternative command if the condition is false; and the CASE structure, which is used to evaluate multiple mutually exclusive conditions. The chapter explains how these structures are implemented in various programming languages, including Pascal, C/C++, and Java, with specific syntax and logical operators such as AND, OR, and NOT. Additionally, the chapter emphasizes the importance of proper use of parentheses in complex conditions to ensure correct logical evaluation.
 
-**Resolution of the Exercises Solved from CHAPTER 04 - LOOP STRUCTURES of the book FUNDAMENTALS OF COMPUTER PROGRAMMING by authors Ana F. G. Ascencio and Edilene A. V. de Campos. 📚**
+**Resolution of the Exercises Solved from CHAPTER 04 - CONDICTIONAL STRUCTURES of the book FUNDAMENTALS OF COMPUTER PROGRAMMING by authors Ana F. G. Ascencio and Edilene A. V. de Campos. 📚**
 
 ---
 
